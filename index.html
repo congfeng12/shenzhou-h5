@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>神州 H5</title>
 <style>
-:root{color-scheme:light;--paper:#c9d4b8;--ink:#263326}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink);font-family:system-ui,"PingFang SC",sans-serif}button{font:inherit;color:inherit;cursor:pointer;border:1px solid #52624f;border-radius:5px;background:#dce3d0;padding:9px 13px;touch-action:none}button:hover,button:focus-visible{background:#f0f2e9;outline:2px solid #52624f;outline-offset:2px}button:active,button.pressed{background:#829878;color:#fff}#game{display:block;width:100vw;height:100dvh;object-fit:contain;image-rendering:pixelated;outline:0;touch-action:none}#tools{position:fixed;right:max(10px,env(safe-area-inset-right));top:max(10px,env(safe-area-inset-top));z-index:2;display:flex;gap:6px;opacity:.2;transition:opacity .2s}#tools:hover,#tools:focus-within{opacity:1}#tools button{padding:7px 10px;font-size:13px}dialog{border:1px solid var(--ink);border-radius:10px;background:#e3e9d9;color:var(--ink);max-width:min(460px,90vw);padding:25px;line-height:1.8}dialog::backdrop{background:#1b261b99}dialog h1{font-size:24px;margin:0 0 12px}dialog h2{font-size:17px}dialog p{margin:10px 0}dialog .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}kbd{display:inline-block;font-family:inherit;font-size:13px;border:1px solid #97a48e;border-radius:3px;padding:0 5px;background:#f0f2e9}#status{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);background:#e3e9d9ed;border:1px solid #52624f;border-radius:5px;padding:8px 14px;font-size:13px;max-width:90vw;z-index:4}#status:empty{display:none}#error{white-space:pre-wrap;font-size:13px;max-height:30vh;overflow:auto}input[type=file]{display:none}
-dialog.wide{width:min(880px,94vw);max-width:94vw;max-height:86vh;display:none;flex-direction:column}dialog.wide[open]{display:flex}dialog p.hint{font-size:13px;opacity:.78;margin:4px 0 0}.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 10px}.tabs button[aria-selected=true]{background:#5c7359;border-color:#3f5240;color:#fff}label.filter{display:block;margin-bottom:8px;font-size:13px}label.filter input{width:100%;padding:7px 9px;border:1px solid #97a48e;border-radius:5px;background:#f4f6ee;color:var(--ink);font:inherit}.scroll{overflow:auto;flex:1;min-height:160px;border:1px solid #aeba9f;border-radius:6px;background:#eef1e6}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 9px;border-bottom:1px solid #c6cfbd;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#d9dfcd;z-index:1}td.num{text-align:right;white-space:nowrap}.scroll input[type=number]{width:74px;padding:4px 6px;border:1px solid #97a48e;border-radius:4px;background:#fff;font:inherit}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px;padding:12px}.stats label{display:flex;flex-direction:column;gap:4px;font-size:13px}.stats input{padding:6px;border:1px solid #97a48e;border-radius:4px;background:#fff;font:inherit}.stats,.rows{grid-column:1/-1}.rows ul{margin:0;padding-left:20px;font-size:13px;line-height:1.75}h3{font-size:15px;margin:16px 0 6px}.empty{padding:18px;opacity:.7}@media(max-width:600px){#tools{opacity:.75}#tools button{font-size:12px;padding:6px 8px}}
+:root{color-scheme:light;--paper:#c9d4b8;--ink:#263326}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink);font-family:system-ui,"PingFang SC",sans-serif}button{font:inherit;color:inherit;cursor:pointer;border:1px solid #52624f;border-radius:5px;background:#dce3d0;padding:9px 13px;touch-action:none}button:hover,button:focus-visible{background:#f0f2e9;outline:2px solid #52624f;outline-offset:2px}button:active,button.pressed{background:#829878;color:#fff}#game{display:block;width:100vw;height:100dvh;object-fit:contain;image-rendering:pixelated;outline:0;touch-action:none}#tools{position:fixed;right:max(10px,env(safe-area-inset-right));top:max(10px,env(safe-area-inset-top));z-index:2;display:flex;gap:6px;opacity:.92;transition:opacity .2s}#tools:hover,#tools:focus-within{opacity:1}#tools button{padding:7px 10px;font-size:13px;box-shadow:0 2px 6px #1b261b59;border-color:#3f5240;background:#dce3d0}dialog{border:1px solid var(--ink);border-radius:10px;background:#e3e9d9;color:var(--ink);max-width:min(460px,90vw);padding:25px;line-height:1.8}dialog::backdrop{background:#1b261b99}dialog h1{font-size:24px;margin:0 0 12px}dialog h2{font-size:17px}dialog p{margin:10px 0}dialog .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}kbd{display:inline-block;font-family:inherit;font-size:13px;border:1px solid #97a48e;border-radius:3px;padding:0 5px;background:#f0f2e9}#status{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);background:#e3e9d9ed;border:1px solid #52624f;border-radius:5px;padding:8px 14px;font-size:13px;max-width:90vw;z-index:4}#status:empty{display:none}#error{white-space:pre-wrap;font-size:13px;max-height:30vh;overflow:auto}input[type=file]{display:none}
+dialog.wide{width:min(880px,94vw);max-width:94vw;max-height:86vh;display:none;flex-direction:column}dialog.wide[open]{display:flex}dialog p.hint{font-size:13px;opacity:.78;margin:4px 0 0}.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 10px}.tabs button[aria-selected=true]{background:#5c7359;border-color:#3f5240;color:#fff}label.filter{display:block;margin-bottom:8px;font-size:13px}label.filter input{width:100%;padding:7px 9px;border:1px solid #97a48e;border-radius:5px;background:#f4f6ee;color:var(--ink);font:inherit}.scroll{overflow:auto;flex:1;min-height:160px;border:1px solid #aeba9f;border-radius:6px;background:#eef1e6}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 9px;border-bottom:1px solid #c6cfbd;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#d9dfcd;z-index:1}td.num{text-align:right;white-space:nowrap}.scroll input[type=number]{width:74px;padding:4px 6px;border:1px solid #97a48e;border-radius:4px;background:#fff;font:inherit}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px;padding:12px}.stats label{display:flex;flex-direction:column;gap:4px;font-size:13px}.stats input{padding:6px;border:1px solid #97a48e;border-radius:4px;background:#fff;font:inherit}.stats,.rows{grid-column:1/-1}.rows ul{margin:0;padding-left:20px;font-size:13px;line-height:1.75}h3{font-size:15px;margin:16px 0 6px}.empty{padding:18px;opacity:.7}@media(max-width:600px){#tools{opacity:.92}#tools button{font-size:12px;padding:6px 8px}}
 </style>
 </head>
 <body>
@@ -5946,6 +5946,8 @@ class ShenzhouMachine {
     });
     this.rom(0x1a2, () => this.ret());
     this.rom(0x18f, () => this.ret(1));
+    // 0x192：升级/大数值重绘时调用的图形接口，调用方不检查返回值，空实现即可。
+    this.rom(0x192, () => this.ret());
     this.rom(0x3d4, () => this.ret(this.files.get(this.long(0) & 255)?.position ?? 0xffff));
     this.rom(0x3d5, () => this.ret(this.files.get(this.long(0) & 255)?.data.length ?? 0xffff));
     this.rom(0x3db, () => {
@@ -6445,9 +6447,10 @@ function alignCursor(map, index) {
   }
   return map.cursor === index;
 }
-// 点击移动：原版每走一格都要等一次完整的“按下→松开”输入周期（约 16 帧），
-// 按键积压后还会在松手后集中回放。因此每步只按 1～2 帧，等角色真的走完再走下一步。
-// 路径用 BFS 规划；撞墙只记下这条边，之后绕开障碍重新规划，直到目标或切换地图。
+// 点击移动：与 RPG Maker 的 TouchMove 同思路——每走一步都现场用 A*（曼哈顿启发）
+// 规划“下一步往哪走”，撞到的墙只记下这条边，下次规划自动绕开；
+// 搜索深度内到不了目标时，走向 A* 里离目标最近的格子，到最近点后自然停下。
+// 原版每走一格都要等一次完整的“按下→松开”输入周期，所以每步只按 1～2 帧。
 const walkDirections = [
   { dx: 1, dy: 0, code: 22 },
   { dx: -1, dy: 0, code: 23 },
@@ -6465,35 +6468,50 @@ function stopWalk() {
   }
   walk = null;
 }
-function walkPath(from, to, blocked) {
-  const pad = 24;
-  const minX = Math.min(from.x, to.x) - pad, maxX = Math.max(from.x, to.x) + pad;
-  const minY = Math.min(from.y, to.y) - pad, maxY = Math.max(from.y, to.y) + pad;
-  const queue = [{ x: from.x, y: from.y, path: [] }];
-  const seen = new Set([from.x + ',' + from.y]);
-  for (let head = 0; head < queue.length && head < 6000; head++) {
-    const current = queue[head];
-    if (current.x === to.x && current.y === to.y) return current.path;
+function walkStep(from, to, blocked) {
+  const LIMIT = 64;
+  const distance = (x, y) => Math.abs(x - to.x) + Math.abs(y - to.y);
+  const open = [{ x: from.x, y: from.y, g: 0, parent: null }];
+  const known = new Map([[from.x + ',' + from.y, 0]]);
+  let best = open[0];
+  let reached = null;
+  for (let guard = 0; open.length && guard < 5000; guard++) {
+    let pick = 0;
+    for (let i = 1; i < open.length; i++) {
+      if (open[i].g + distance(open[i].x, open[i].y) < open[pick].g + distance(open[pick].x, open[pick].y)) pick = i;
+    }
+    const current = open.splice(pick, 1)[0];
+    if (current.x === to.x && current.y === to.y) { reached = current; break; }
+    if (current.g >= LIMIT) continue;
     for (let dir = 0; dir < 4; dir++) {
       const step = walkDirections[dir];
       const x = current.x + step.dx, y = current.y + step.dy;
-      if (x < minX || x > maxX || y < minY || y > maxY || blocked.has(walkEdge(current.x, current.y, dir))) continue;
+      if (blocked.has(walkEdge(current.x, current.y, dir))) continue;
+      const g = current.g + 1;
       const id = x + ',' + y;
-      if (seen.has(id)) continue;
-      seen.add(id);
-      queue.push({ x, y, path: current.path.concat(dir) });
+      if (known.has(id) && known.get(id) <= g) continue;
+      known.set(id, g);
+      const node = { x, y, g, parent: current };
+      open.push(node);
+      if (distance(x, y) < distance(best.x, best.y)) best = node;
     }
   }
-  return null;
+  const target = reached || best;
+  if (!target || target.x === from.x && target.y === from.y) return -1;
+  let node = target;
+  while (node.parent && (node.parent.x !== from.x || node.parent.y !== from.y)) node = node.parent;
+  if (!node.parent) return -1;
+  const dx = node.x - from.x, dy = node.y - from.y;
+  return walkDirections.findIndex(d => d.dx === dx && d.dy === dy);
 }
 function planWalk() {
   if (!walk) return;
   const here = heroTile();
   if (here.x === walk.x && here.y === walk.y) { stopWalk(); return; }
-  const path = walkPath(here, { x: walk.x, y: walk.y }, walk.blocked);
-  if (!path || !path.length) { stopWalk(); return; }
-  walk.dir = path[0];
-  walk.code = walkDirections[path[0]].code;
+  const dir = walkStep(here, { x: walk.x, y: walk.y }, walk.blocked);
+  if (dir < 0) { stopWalk(); return; }
+  walk.dir = dir;
+  walk.code = walkDirections[dir].code;
   walk.from = here;
   walk.phase = 'press';
   walk.frames = 0;
@@ -6501,7 +6519,7 @@ function planWalk() {
 function walkTo(x, y) {
   if (!inWorldLoop()) return;
   stopWalk();
-  walk = { x, y, blocked: new Set(), code: 0, dir: 0, from: heroTile(), phase: 'press', frames: 0, steps: 0, best: Infinity, stall: 0, map: byteAt(0x152b) };
+  walk = { x, y, blocked: new Set(), code: 0, dir: 0, from: heroTile(), phase: 'press', frames: 0, steps: 0, map: byteAt(0x152b) };
   planWalk();
 }
 function updateWalk() {
@@ -6525,17 +6543,13 @@ function updateWalk() {
   }
   walk.frames++;
   if (here.x !== walk.from.x || here.y !== walk.from.y) {
-    // 目标可能在墙里或需要绕很远：长时间没有靠近就停下，避免一直绕圈。
-    const distance = Math.abs(here.x - walk.x) + Math.abs(here.y - walk.y);
-    if (distance < walk.best) { walk.best = distance; walk.stall = 0; }
-    else if (++walk.stall > 30) { stopWalk(); return; }
-    if (++walk.steps > 160) { stopWalk(); return; }
+    if (++walk.steps > 240) { stopWalk(); return; }
     planWalk();
     return;
   }
   if (walk.frames > 30) {
     walk.blocked.add(walkEdge(walk.from.x, walk.from.y, walk.dir));
-    if (walk.blocked.size > 40) { stopWalk(); return; }
+    if (walk.blocked.size > 60) { stopWalk(); return; }
     planWalk();
   }
 }
